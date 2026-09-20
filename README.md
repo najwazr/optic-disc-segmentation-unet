@@ -10,7 +10,7 @@ Everything lives in a single Google Colab notebook, `UNet_optic_disc.ipynb`, whi
 - Evaluation: custom IoU and Dice Score metrics, training curves, and side-by-side visualization of *image / ground truth / prediction*  
 
 
-![Segmentation Pipeline](assets/pipeline.png)
+<img src="assets/pipeline.png" alt="Segmentation Pipeline" width="550">
 *Overall segmentation pipeline, from data loading to prediction output.*
 
 ## Results
@@ -38,7 +38,7 @@ To use your own data, keep the same structure (each `xxx.jpg` needs a matching `
 
 ## Model Architecture
 
-![U-Net Architecture](assets/unet_architecture.png)
+<img src="assets/unet_architecture.png" alt="U-Net Architecture" width="600">
 *Conceptual U-Net diagram. See the table below for the exact configuration used in the notebook.*
 
 | Stage | Details |
