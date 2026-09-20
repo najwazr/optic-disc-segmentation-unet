@@ -3,7 +3,7 @@
 
 This project trains a **U-Net** model to segment the **optic disc (OD)** in retinal fundus images. Accurate OD segmentation is the first step toward computing the Cup-to-Disc Ratio (CDR), a key biomarker for glaucoma, the "silent thief of sight" and one of the leading causes of irreversible blindness worldwide.
 
-Everything lives in a single Google Colab notebook, `TPCB_Project.ipynb`, which covers:
+Everything lives in a single Google Colab notebook, `UNet_optic_disc.ipynb`, which covers:
 - Data loading & preprocessing: resize to 128×128, pixel normalization, grayscale masks  
 - Data augmentation: synchronized image–mask transforms (rotation, shift, zoom, flip, brightness)  
 - Model: a U-Net built from scratch in TensorFlow/Keras (encoder, bottleneck, decoder with skip connections)  
@@ -53,7 +53,7 @@ To use your own data, keep the same structure (each `xxx.jpg` needs a matching `
 
 ## How to Run
 
-1. Upload `TPCB_Project.ipynb` to [Google Colab](https://colab.research.google.com/) (a GPU runtime is recommended, training on CPU took ~3 minutes per epoch in our run).
+1. Upload `UNet_optic_disc.ipynb` to [Google Colab](https://colab.research.google.com/) (a GPU runtime is recommended, training on CPU took ~3 minutes per epoch in our run).
 2. Put your dataset in Google Drive using the structure above.
 3. Update `images_path` and `masks_path` if your folder location differs.
 4. Run all cells. The notebook will:
@@ -68,7 +68,7 @@ To use your own data, keep the same structure (each `xxx.jpg` needs a matching `
 
 ```
 .
-├── TPCB_Project.ipynb   # data loading, augmentation, U-Net, training, evaluation
+├── UNet_optic_disc.ipynb   # data loading, augmentation, U-Net, training, evaluation
 └── README.md
 ```
 
